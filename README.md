@@ -1,8 +1,11 @@
-# Simple chat application built by React.Js , Express.js , MongoDb And Socket.Io to practice realtie communication in react
+# Simple chat application
+
+_built by React.Js , Express.js , MongoDb And Socket.Io to practice realtime communication_  
 
 Some features are
-* Sending emojies
-* Pick rando, avatar image online from and api 
-* realtime communicaiton with all application users
+* Sending emojis
+* Pick rando, avatar image online from and api
+* realtime communication with all application users
 
- 
+![This is an image](./server/resources/appScreenShot.png)
+
