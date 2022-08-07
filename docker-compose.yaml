@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  client:
+    build: ./client
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./client:/app
+  server:
+    build: ./server
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./server:/app
+    environment:
+      MONGO_URL: mongodb://mongodb/chat_app
+  mongodb:
+    image: mongo:4.0-xenial
+    ports:
+      - "27018:27017"
+    volumes:
+      - chat_app:/data/db
+    container_name: main_mongo
+volumes:
+  chat_app:
+
+
